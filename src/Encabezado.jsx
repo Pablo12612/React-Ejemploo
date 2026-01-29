@@ -59,5 +59,17 @@ function Redes(){
     )
 }
 
+function Card(){
+    return(
+        <div className='cardDiv'>
+            <ul>
+            <li>ROCK</li>
+            <li>HEAVY</li>
+            <li>NU</li>
+            </ul>
+        </div>
+    )
+}
+
 export default Encabezado
 

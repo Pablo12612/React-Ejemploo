@@ -1,5 +1,5 @@
 .encabezadoDiv {
-    background-color: #161fcb;
+    background-color: #050725;
     padding: 10px 40px;
     display: flex;
     align-items: center;
@@ -25,13 +25,17 @@
 }
 
 .menuDiv ul li {
-    background-color: #9b39c5;
+    background-color: #b0abb3;
     color: white;
     padding: 5px 15px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     
+}
+
+.menuDiv ul li:hover{
+    background-color: darkviolet;
 }
 
 .redesDiv ul {
@@ -49,4 +53,6 @@
     width: 24px; 
     height: auto;
 }
+
+
 

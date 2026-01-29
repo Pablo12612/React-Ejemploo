@@ -1,12 +1,12 @@
 import Encabezado from "./Encabezado"
 import Expresiones from "./Expresiones"
+import Body from "./Body"
 function App(){
   return (
     <div>
       <Encabezado />
       <Expresiones />
-  <h1>5C DSM</h1>
-  <h2>TI Pablo Martinez Gaspar</h2>
+      <Body />
   </div>
 )
 }
