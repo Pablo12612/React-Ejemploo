@@ -1,0 +1,17 @@
+.fondoDiv {
+  width: 95%;
+  height: 250%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  box-shadow: 8, 8, 8, 8 rgb(rgb(70, 65, 65));
+  background-color: white;
+  
+}
+
+.Fondo img {
+  width: 1000px;
+  height: 250%;
+  object-fit: fill;
+}
