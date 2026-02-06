@@ -3,6 +3,7 @@ import Expresiones from "./Expresiones"
 import Body from "./Body"
 import Card from "./Card"
 import Footer from "./Footer"
+import AcercaDe from "./Acerca de"
 import { useState } from "react"
 
 function App(){

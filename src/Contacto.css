@@ -1,0 +1,18 @@
+.contacto-header {
+    background-color: #0c0202cb;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(249, 247, 252, 0.8); 
+    border-radius: 6px;
+    margin: 0 0 20px 0; 
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.contacto-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+
+}
