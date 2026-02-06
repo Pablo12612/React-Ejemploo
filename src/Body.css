@@ -1,73 +1,156 @@
-.cardDiv{
-   display: flex;
-   justify-content: space-around;
-   margin-top: 20px;
-   background-color: aliceblue;
+.cardDiv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: rgb(221, 227, 230);
+    padding: 20px; 
 }
 
-.card1{
-    background-color: rgb(218, 222, 223);
-    color: #402194;
+/* card1 es para cada tarjeta individual */
+.card1 {
+    background-color: rgb(78, 80, 80);
+    color: #d4d4d4;
     padding: 8px 18px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+    margin: 10px; /* Añadido para separación */
 }
 
-.card1 img{
-    width: 300px;
-    height: 250px;
+.card1 img {
+    width: 100%;
+    height: 200px;
     border-radius: 15px;
+    display: block;
 }
 
-.card1:hover{
+.card1:hover {
     transform: translateY(-5px);
 }
 
-.card2{
-    background-color: rgb(218, 222, 223);
-    color: #402194;
-    padding: 8px 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+.card2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.inicio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.productos-header {
+    background-color: #140694cb;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(249, 247, 252, 0.8);
+    border-radius: 6px;
+    margin: 0 0 20px 0; 
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+    
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    
 }
 
 
-.card2 img{
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-
+.acerca-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.acerca-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
-.card2:hover{
-        transform: translateY(-5px);
-
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
-.card3{
-    background-color: rgb(218, 222, 223);
-    color: #402194;
-    padding: 8px 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+.galeria-container img {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+}
+.galeria-header {
+    background-color: #5d0f8acb;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(249, 247, 252, 0.8);
+    border-radius: 6px;
+    margin: 0 0 20px 0; 
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
 }
 
-
-.card3 img{
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-
+.head {
+    background-color: #f10707cb;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(249, 247, 252, 0.8);
+    border-radius: 6px;
+    margin: 0 0 20px 0; 
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
-.card3:hover{
-            transform: translateY(-5px);
-
+.text {
+    background-color: #0c0202cb;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(249, 247, 252, 0.8); 
+    border-radius: 6px;
+    margin: 0; 
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
+.hc{
+    color: white;
+}
 
+.contacto-header {
+    background-color: #0c0202cb;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(249, 247, 252, 0.8); 
+    border-radius: 6px;
+    margin: 0 0 20px 0; 
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
 
+.contacto-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
 
+}

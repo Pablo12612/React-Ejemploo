@@ -1,17 +1,40 @@
-.fondoDiv {
-  width: 95%;
-  height: 250%;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  box-shadow: 8, 8, 8, 8 rgb(rgb(70, 65, 65));
-  background-color: white;
-  
+.card-con-fondo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: 96%;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.Fondo img {
-  width: 1000px;
-  height: 250%;
-  object-fit: fill;
+.card-con-fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.card-contenido {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.card-contenido h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-contenido p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }

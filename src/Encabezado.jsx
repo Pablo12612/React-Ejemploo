@@ -1,20 +1,22 @@
-import miImagen from './assets/images.png';
+import bc from './assets/bc.png';
 import iconoFaceook from './assets/face.png';
 import iconoWhatsapp from './assets/Whatsapp.png';
 import iconoYoutube from './assets/youtube.png';
 import iconoLinkedin from './assets/link.png';
 import iconoGmail from './assets/Gmail.png';
 import iconoInstagram from './assets/instagram.png';
+import PropTypes from 'prop-types';
+
 
 
 
 import './Encabezado.css';
 
-function Encabezado(){
+function Encabezado({cambiarVista}){
     return(
     <div className='encabezadoDiv'>
         <Logotipo />
-        <Menu />
+        <Menu cambiarVista={cambiarVista} />
         <Redes />
     </div>
     )
@@ -24,20 +26,20 @@ function Encabezado(){
 function Logotipo(){
   return(
     <div className='logoDiv'>
-      <img src={miImagen} alt='Logotipo' />
+      <img src={bc} alt='Logotipo' />
     </div>
   )
 }
 
-function Menu(){
+function Menu({cambiarVista}){
     return(
         <div className='menuDiv'>
             <ul>
-                <li>Inicio</li>
-                <li>Acerca de</li>
-                <li>Productos</li>
-                <li>Contacto</li>
-                <li>Sucursales</li>
+                <li onClick={() => cambiarVista('Inicio')}>Inicio</li>
+                <li onClick={() => cambiarVista('AcercaDe')}>Acerca de</li>
+                <li onClick={() => cambiarVista('Productos')}>Productos</li>
+                <li onClick={() => cambiarVista('Galeria')}>Galería</li>
+                <li onClick={() => cambiarVista('Contacto')}>Contacto</li>
             </ul>
         </div>
     )
@@ -58,8 +60,13 @@ function Redes(){
         </div>
     )
 }
+Menu.propTypes = {
+    cambiarVista: PropTypes.func.isRequired
+};
 
+Encabezado.propTypes = {
+    cambiarVista: PropTypes.func.isRequired
+};
 
-
-export default Encabezado
+export default Encabezado;
 
