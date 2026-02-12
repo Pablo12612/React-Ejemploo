@@ -1,4 +1,3 @@
-import {APIProvider,Map, AdvancedMarker, Pin} from '@vis.gl/react-google-maps';
 import History from './assets/History.jpg';
 import './Card.css';
 

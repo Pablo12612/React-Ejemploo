@@ -47,7 +47,7 @@ function ContG(){
 
 function Tarjeta({name, src}){
     return(
-        <div className='card1'>
+        <div className='galeriaCard'>
             <img src={src} alt={name} />
             <p>{name}</p>
         </div>

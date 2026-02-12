@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    background-color: rgb(221, 227, 230);
+    background-color: rgb(1, 2, 2);
     padding: 20px; 
 }
 
 /* card1 es para cada tarjeta individual */
 .card1 {
-    background-color: rgb(199, 199, 198);
+    background-color: rgb(121, 119, 128);
     color: #070606;
     padding: 8px 18px;
     border-radius: 20px;

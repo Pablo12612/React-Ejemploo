@@ -47,7 +47,7 @@ function ContP(){
 
 function Tarjeta({name, src}){
     return(
-        <div className='card1'>
+        <div className='productosCard'>
             <img src={src} alt={name} />
             <p>{name}</p>
         </div>
