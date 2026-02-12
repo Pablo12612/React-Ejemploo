@@ -11,6 +11,7 @@ import AcercaDe from './Acerca de';
 import Productos from './Productos';
 import Galeria from './Galeria';
 import Contacto from './Contacto';
+import Sucursales from './Sucursales';
 
 
 
@@ -22,7 +23,8 @@ function Body({vista}){
         "AcercaDe": <AcercaDe />,
         "Productos": <Productos />,
         "Galeria": <Galeria />,
-        "Contacto": <Contacto />
+        "Contacto": <Contacto />,
+        "Sucursales": <Sucursales />
     }
     return(
         <div className='cardDiv'>
