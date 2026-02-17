@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 
 
 import './Encabezado.css';
+import Clima from './Clima';
 
 function Encabezado({cambiarVista}){
     return(
@@ -59,6 +60,8 @@ function Redes(){
                 <li><img src={iconoLinkedin} alt="Linkedin" /></li>
 
             </ul>
+            <Clima
+            />
         </div>
     )
 }
