@@ -1,57 +1,54 @@
-import './Productos.css';
-import bul from './assets/bul.jpg';
-import seth from './assets/seth.jpg';
-import xd from './assets/xd.jpg';
-import pl from './assets/pl.jpg';
-import ro from './assets/ro.jpg';
-import ed from './assets/ed.jpg';
-import ge from './assets/ge.jpg';
-import pa from './assets/pa.jpg';
-import whc from './assets/whc.jpg';
-import wuc from './assets/wuc.jpg';
-import wuwc from './assets/wuwc.jpg';
+import React, { useState, useEffect } from "react";
+import api from "./Services/api";
+import "./Productos.css";
 
-function Productos(){
-    return(
-        <div className='ContP'>
-            <ContP />
+function Productos() {
+  const [productos, setProductos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-        </div>
-    )
-}
+  useEffect(() => {
+    const obtenerProductos = async () => {
+      try {
+        const response = await api.get("/products");
+        console.log("Datos recibidos:", response.data);
 
+        setProductos(response.data);
+      } catch (error) {
+        console.error("Error:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-function ContP(){
-    return(
-        <>
-        <div className='productos-header'>
-                       <h1 className='hpro'>Productos</h1>
+    obtenerProductos();
+  }, []);
 
-        </div>
-        <div className='productos-container'>
-            <Tarjeta name='T-Shirt Bullet Club | $35.00' src={bul} />
-            <Tarjeta name='T-Shirt Seth Rollins | $30.00' src={seth} />
-            <Tarjeta name='T-Shirt Degeneratio - X | $25.00' src={xd} />
-            <Tarjeta name='T-Shirt Gunther | $30.00' src={pl} />
-            <Tarjeta name='T-Shirt Randy Orton | $35.00' src={ro} />
-            <Tarjeta name='T-Shirt Edge | $25.00' src={ed} />
-            <Tarjeta name='T-Shirt Rated R Superstar Edge | $35.00' src={ge} />
-            <Tarjeta name='T-Shirt Drew Mcintyre | $30.00' src={pa} />
-            <Tarjeta name='World Heavyweight Championship | $45.00' src={whc} />
-            <Tarjeta name='WWE Universal Championship | $40.00' src={wuc} />
-            <Tarjeta name='WWE Undisputed Championship | $50.00' src={wuwc} />
-        </div>
-        </>
-    );
-}
+  if (loading) return <p>Cargando...</p>;
 
-function Tarjeta({name, src}){
-    return(
-        <div className='productosCard'>
-            <img src={src} alt={name} />
-            <p>{name}</p>
-        </div>
-    );
+  return (
+    <div>
+      <header className="productos-header">
+        <h1>Nuestro Catálogo Tecnológico</h1>
+      </header>
+
+      <main className="productos-container">
+        {productos.length === 0 ? (
+          <p>No hay productos</p>
+        ) : (
+          productos.map((producto) => (
+            <article key={producto.id} className="productosCard">
+              <img src={producto.image} alt={producto.name} />
+              <span>{producto.category}</span>
+              <h2>{producto.name}</h2>
+              <p>{producto.description}</p>
+              <h3>${producto.price}</h3>
+              <button>Comprar</button>
+            </article>
+          ))
+        )}
+      </main>
+    </div>
+  );
 }
 
 export default Productos;

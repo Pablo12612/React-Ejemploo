@@ -12,6 +12,7 @@ import Productos from './Productos';
 import Galeria from './Galeria';
 import Contacto from './Contacto';
 import Sucursales from './Sucursales';
+import Usuarios from './Usuarios';
 
 
 
@@ -24,7 +25,8 @@ function Body({vista}){
         "Productos": <Productos />,
         "Galeria": <Galeria />,
         "Contacto": <Contacto />,
-        "Sucursales": <Sucursales />
+        "Sucursales": <Sucursales />,
+        "Usuarios": <Usuarios />
     }
     return(
         <div className='cardDiv'>
