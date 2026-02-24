@@ -1,0 +1,64 @@
+.usuarios-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.usuarios-header h1 {
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+.usuarios-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tUsuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(124, 124, 123);
+    border: 1px solid #ddd;
+}
+
+.tUsuarios tr {
+    border-bottom: 1px solid #140404;
+}
+
+.tUsuarios td, .tUsuarios th {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tUsuarios th {
+    background-color: #c9c5c5;
+    font-weight: bold;
+    color: #333;
+}
+
+.tUsuarios tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tUsuarios button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #060af3;
+    background-color: rgb(118, 114, 197);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.tUsuarios button:hover {
+    background-color: #5e276e;
+}
+
+.usuarios-container > p {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    border: 1px solid #1d1b1b;
+    background-color: #523ed7;
+}
