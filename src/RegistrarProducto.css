@@ -1,0 +1,30 @@
+.registrar-producto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.registrar-producto-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.registrar-producto-form label {
+  margin-bottom: 5px;
+}
+.registrar-producto-form input {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 16px;
+}
+.registrar-producto-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.registrar-producto-form button:hover {
+  background-color: #0056b3;
+}

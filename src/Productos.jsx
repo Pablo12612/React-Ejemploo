@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import api from "./Services/api";
 import "./Productos.css";
+import RegistrarProducto from "./RegistrarProducto";
 
 function Productos() {
   const [productos, setProductos] = useState([]);
@@ -26,9 +27,13 @@ function Productos() {
   if (loading) return <p>Cargando...</p>;
 
   return (
+    
     <div>
+
       <header className="productos-header">
         <h1>Nuestro Catálogo Tecnológico</h1>
+          <RegistrarProducto />
+
       </header>
 
       <main className="productos-container">
