@@ -30,11 +30,14 @@ function Productos() {
     
     <div>
 
+
       <header className="productos-header">
-        <h1>Nuestro Catálogo Tecnológico</h1>
-          <RegistrarProducto />
+        <h1>Nuestro Catálogo</h1>
 
       </header>
+
+                  <RegistrarProducto />
+
 
       <main className="productos-container">
         {productos.length === 0 ? (

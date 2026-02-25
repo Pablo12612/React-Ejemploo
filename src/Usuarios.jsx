@@ -1,6 +1,7 @@
 import './Usuarios.css';
 import React, { useState, useEffect } from "react";
 import api from './Services/api';
+import RegistrarUsuario from './RegistrarUsuario';
 
 function Usuarios(){
     const [usuarios, setUsuarios] = useState([]);
@@ -27,6 +28,8 @@ function Usuarios(){
             <header className='usuarios-header'>
                 <h1>Usuarios</h1>
             </header>
+
+            <RegistrarUsuario />
 
             <main className='usuarios-container'>
                 {usuarios.length === 0 ? (

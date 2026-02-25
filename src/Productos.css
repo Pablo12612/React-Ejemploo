@@ -10,7 +10,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Contenedor en grid */
 .productos-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
