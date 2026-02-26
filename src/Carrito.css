@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
 .carrito-header {
@@ -18,7 +20,7 @@
   padding: 15px;
   width: 220px;
   text-align: center;
-  background-color: #b4b7b8;
+  background-color: #f6f6f7;
 }
 
 .carritoCard img {

@@ -40,10 +40,8 @@ function Usuarios(){
                             <tr>
                                 <th>ID</th>
                                 <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>Dirección</th>
-                                <th>Teléfono</th>
                                 <th>Email</th>
+                                <th>Password</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -52,10 +50,8 @@ function Usuarios(){
                                 <tr key={usuario.id}>
                                     <td>{usuario.id}</td>
                                     <td>{usuario.username}</td>
-                                    <td>{usuario.apellidos || '-'}</td>
-                                    <td>{usuario.direccion || '-'}</td>
-                                    <td>{usuario.telefono || '-'}</td>
                                     <td>{usuario.email}</td>
+                                   <td>{usuario.password || '-'}</td>
                                     <td>
                                         <button>Editar</button>
                                         <button>Eliminar</button>

@@ -50,6 +50,8 @@ function ContC(){
         </div>
 
         <div className='contacto-container'>
+                            <h1>Formulario de Contacto</h1>
+
 
             <p className='pc'>Para más información, contáctanos en:</p>
             <p className='pc'>Correo electrónico: info@wrestling.com</p>

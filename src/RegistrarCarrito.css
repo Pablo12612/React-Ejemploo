@@ -1,40 +1,42 @@
-.registrar-usuario-container {
+.registrar-carrito-container {
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
+    justify-content: center;
+    text-align: center;
 }
 
-.registrar-usuario-container h1 {
+.registrar-carrito-container h1 {
     text-align: center;
-    color: #575454;
+    color: #333;
     margin-bottom: 30px;
     font-size: 24px;
+    
 }
 
-.registrar-form {
+.registrar-carrito-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: azure;
 }
 
-.registrar-form input {
+.registrar-carrito-form input {
     padding: 12px;
-    border: 1px solid #c85151;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.registrar-form input:focus {
+.registrar-carrito-form input:focus {
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0,123,255,0.3);
 }
 
-.registrar-form button {
+.registrar-carrito-form button {
     padding: 12px;
     background-color: #007bff;
     color: white;
@@ -45,6 +47,6 @@
     margin-top: 10px;
 }
 
-.registrar-form button:hover {
-    background-color: #576dec;
+.registrar-carrito-form button:hover {
+    background-color: #530b84;
 }
