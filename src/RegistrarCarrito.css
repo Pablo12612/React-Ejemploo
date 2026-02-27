@@ -9,6 +9,8 @@
     text-align: center;
 }
 
+
+
 .registrar-carrito-container h1 {
     text-align: center;
     color: #333;
@@ -49,4 +51,6 @@
 
 .registrar-carrito-form button:hover {
     background-color: #530b84;
+      transform: scale(1.1);
+
 }

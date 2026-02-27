@@ -46,5 +46,7 @@
 }
 
 .registrar-form button:hover {
+          transform: scale(1.1);
+
     background-color: #576dec;
 }

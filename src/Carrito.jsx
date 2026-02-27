@@ -63,6 +63,7 @@ function Carrito() {
               <h2>{item.title}</h2>
               <p>Cantidad: {item.quantity}</p>
               <h3>Precio: ${item.price}</h3>
+              <button className="btn-eliminar" onClick={()=>{removeCarrito(item.id)}}>Eliminar</button>
             </article>
           ))
         )}
@@ -70,5 +71,20 @@ function Carrito() {
     </div>
   );
 }
+
+const removeCarrito = async (itemid) =>{
+        try{
+            const response = await api.delete(
+                `/products/${itemid}`
+            );
+
+            console.log(response.data);
+            alert('¡Carrito Eliminado con exito!');
+
+        }catch (error){
+            console.error(error);
+
+        }
+        }
 
 export default Carrito;

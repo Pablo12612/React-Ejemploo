@@ -50,7 +50,8 @@ function Productos() {
               <h2>{producto.name}</h2>
               <p>{producto.description}</p>
               <h3>${producto.price}</h3>
-              <button>Comprar</button>
+              <button className="btn-comprar">Comprar</button>
+              <button className="btn-eliminar" onClick={()=>{removeProducto(producto.id)}}>Eliminar</button>
             </article>
           ))
         )}
@@ -58,5 +59,20 @@ function Productos() {
     </div>
   );
 }
+
+const removeProducto = async (productoid) =>{
+        try{
+            const response = await api.delete(
+                `/products/${productoid}`
+            );
+
+            console.log(response.data);
+            alert('¡Producto Eliminado con exito!');
+
+        }catch (error){
+            console.error(error);
+
+        }
+        }
 
 export default Productos;

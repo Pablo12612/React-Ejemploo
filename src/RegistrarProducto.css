@@ -30,7 +30,7 @@
 .registrar-form input:focus {
     outline: none;
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    box-shadow: 0 0 5px rgba(45, 131, 230, 0.911);
 }
 
 .registrar-form button {
@@ -45,5 +45,7 @@
 }
 
 .registrar-form button:hover {
-    background-color: #530b84;
+          transform: scale(1.1);
+
+    background-color: #074feb;
 }

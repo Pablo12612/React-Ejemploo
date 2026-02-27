@@ -17,7 +17,6 @@
     padding: 20px;
 }
 
-/* Card */
 .productosCard {
     background-color: #ffffff;
     border-radius: 15px;
@@ -29,25 +28,24 @@
     justify-content: space-between;
 }
 
-/* Imagen */
 .productosCard img {
     width: 100%;
     height: 200px;
-    object-fit: contain; /* mejor para productos */
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-/* Hover */
 .productosCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Botón */
-.productosCard button {
-    background-color: #140694;
-    color: white;
+
+
+.btn-comprar{
+    background-color: rgb(8, 138, 99);
+     color: rgb(7, 6, 6);
     border: none;
     padding: 10px;
     border-radius: 8px;
@@ -56,6 +54,25 @@
     transition: 0.3s;
 }
 
-.productosCard button:hover {
-    background-color: #3c2df0;
+.btn-comprar:hover {
+    background-color: #0ef706;
+        transform: translateY(-8px);
+
+}
+
+.btn-eliminar{
+    background-color: rgb(161, 65, 53);
+     color: rgb(7, 6, 6);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #f31e02;
+        transform: translateY(-8px);
+
 }

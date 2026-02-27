@@ -48,7 +48,7 @@
     background-color: #f9f9f9;
 }
 
-.tUsuarios button {
+.btn-editar {
     padding: 5px 10px;
     margin: 0 2px;
     border: 1px solid #060af3;
@@ -58,8 +58,28 @@
     font-size: 12px;
 }
 
-.tUsuarios button:hover {
+.btn-editar:hover {
     background-color: #9135a3;
+        transform: translateY(-8px);
+
+}
+
+
+
+.btn-eliminar {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #fd8a06;
+    background-color: rgb(228, 53, 9);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.btn-eliminar:hover {
+    background-color: #e70a0a;
+        transform: translateY(-8px);
+
 }
 
 .usuarios-container > p {
